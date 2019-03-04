@@ -1,0 +1,28 @@
+body {
+	height: 100%;
+	weight: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	border: none;
+	overflow:hidden;
+	font-family:"Adobe Caslon Pro",  "Arial","Microsoft Yahei",sans-serif;
+}
+.clear {
+	clear: both;
+}
+#sky {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(#00111e 30%, #033d5e);
+  background: -moz-linear-gradient(#00111e 30%, #033d5e);
+  background: -o-linear-gradient(#00111e 30%, #033d5e);
+  background: linear-gradient(#00111e 30%, #033d5e);
+  overflow: hidden;
+  position:fixed;
+}
