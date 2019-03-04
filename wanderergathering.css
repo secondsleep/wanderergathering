@@ -167,7 +167,7 @@ nav {
   }
 }
 .blog_info {
-	height:600px;
+	height:100%;
 	margin:5px 80px;
 	padding:10px;
 	background:rgba(25, 25, 25, 0.7);
@@ -196,7 +196,7 @@ nav {
 .content {
 	height: 100%;
 	width: 600px;
-	margin: 5px 100px;
+	margin: 5px;
 	padding:40px;
 	background: rgba(25 ,25 ,25 ,0.7);
 	border-radius:8px;
@@ -207,5 +207,4 @@ nav {
 }
 .title {
 	font-size: 38px;
-
 }
