@@ -168,7 +168,7 @@ nav {
 }
 .blog_info {
 	height:100%;
-	margin:5px 80px;
+	margin:5px 0 5px 80px;
 	padding:10px;
 	background:rgba(25, 25, 25, 0.7);
 	border-radius:8px;
@@ -195,13 +195,13 @@ nav {
 }
 .content {
 	height: 100%;
-	width: 60%;
-	margin: 5px;
+	width: 65%;
+	margin: 5px 150px 5px 0px;
 	padding:40px;
 	background: rgba(25 ,25 ,25 ,0.7);
 	border-radius:8px;
 	color: #d6d6d6;	
-	float:left;
+	float:right;
 	position: relative;
 	text-align: center;
 }
