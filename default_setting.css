@@ -1,23 +1,27 @@
-html { 
-		min-width: 1210px;
-		overflow:auto;
-		}
+html {
+  min-width: 1210px;
+  overflow: auto;
+}
+
 body {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
+
 * {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style-type: none;
-	border: none;
-	overflow:hidden;
-	font-family:"Adobe Caslon Pro",  "Arial","Microsoft Yahei",sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  overflow: hidden;
+  font-family: "Adobe Caslon Pro", "Arial", "Microsoft Yahei", sans-serif;
 }
+
 .clear {
-	clear: both;
+  clear: both;
 }
+
 #sky {
   margin: 0;
   padding: 0;
@@ -28,116 +32,184 @@ body {
   background: -o-linear-gradient(#00111e 30%, #033d5e);
   background: linear-gradient(#00111e 30%, #033d5e);
   overflow: hidden;
-  position:fixed;
+  position: fixed;
+}
+
+@-webkit-keyframes start_menu {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+@-o-keyframes start_menu {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+@-moz-keyframes start_menu {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+@keyframes start_menu {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 75px;
+  }
 }
 @-webkit-keyframes jump {
   0% {
     bottom: 0px;
   }
+
   25% {
     bottom: 5px;
   }
+
   50% {
     bottom: 0px;
   }
+
   75% {
     bottom: 3px;
   }
+
   100% {
     bottom: 0px;
   }
 }
+
 @-o-keyframes jump {
   0% {
     bottom: 0px;
   }
+
   25% {
     bottom: 5px;
   }
+
   50% {
     bottom: 0px;
   }
+
   75% {
     bottom: 3px;
   }
+
   100% {
     bottom: 0px;
   }
 }
+
 @-moz-keyframes jump {
   0% {
     bottom: 0px;
   }
+
   25% {
     bottom: 5px;
   }
+
   50% {
     bottom: 0px;
   }
+
   75% {
     bottom: 3px;
   }
+
   100% {
     bottom: 0px;
   }
 }
+
 @keyframes jump {
   0% {
     bottom: 0px;
   }
+
   25% {
     bottom: 5px;
   }
+
   50% {
     bottom: 0px;
   }
+
   75% {
     bottom: 3px;
   }
+
   100% {
     bottom: 0px;
   }
 }
+
 @-webkit-keyframes bigger {
   0% {
     font-size: 22px;
   }
+
   50% {
     font-size: 32px;
   }
+
   100% {
     font-size: 22px;
   }
 }
+
 @-o-keyframes bigger {
   0% {
     font-size: 22px;
   }
+
   50% {
     font-size: 32px;
   }
+
   100% {
     font-size: 22px;
   }
 }
+
 @-moz-keyframes bigger {
   0% {
     font-size: 22px;
   }
+
   50% {
     font-size: 32px;
   }
+
   100% {
     font-size: 22px;
   }
 }
+
 @keyframes bigger {
   0% {
     font-size: 22px;
   }
+
   50% {
     font-size: 32px;
   }
+
   100% {
     font-size: 22px;
   }

@@ -1,15 +1,22 @@
 body {
   background: #282828;
 }
+
+header {
+  height: 75px;
+  background: transparent;
+  z-index: 999;
+}
+
 nav {
   width: 100%;
-  background: rgba(73, 73, 73, 0.7);
-  border-radius:10px;
-  position:relative;
-  
+  background: rgba(73, 73, 73, 0.85);
+  border-radius: 10px;
+  position: fixed;
 }
+
 .h {
-  display:block;
+  display: block;
   width: 2.5em;
   height: 2.5em;
   margin: 10px 0;
@@ -20,31 +27,39 @@ nav {
   font-size: 22px;
   text-align: center;
   line-height: 2.5em;
-  border:1px;
+  border: 1px;
   border-radius: 50%;
-    background: -webkit-radial-gradient(
-    circle at top center,
+  background: -webkit-radial-gradient(circle at top center,
     #e5e5e5,
     #969696,
-    #686868
-  );
-  background: radial-gradient(circle at top center, #e5e5e5, #969696, #686868);
+    #686868);
+  background: radial-gradient(circle at top center,
+    #e5e5e5,
+    #969696,
+    #686868);
+  transition: color 0.5s;
+  -moz-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
 }
+
 .h_menu {
-  width:700px;
+  width: 800px;
   margin: 0 auto;
   position: relative;
 }
-.h_menu li{
+
+.h_menu li {
   float: left;
 }
-.h_menu li a{
-  display:block;
+
+.h_menu li a {
+  display: block;
   width: 2.5em;
   height: 2.5em;
   margin: 10px 30px;
   position: relative;
-  border:1px;
+  border: 1px;
   border-radius: 50%;
   color: #333333;
   text-shadow: 0 3px 10px #e2e2e2, 0 -3px 10px #e2e2e2;
@@ -52,19 +67,24 @@ nav {
   font-size: 22px;
   text-align: center;
   line-height: 2.5em;
-  background: -webkit-radial-gradient(
-    circle at top center,
+  background: -webkit-radial-gradient(circle at top center,
     #e5e5e5,
     #969696,
-    #686868
-  );
-  background: radial-gradient(circle at top center, #e5e5e5, #969696, #686868);
-  transition: color 0.5s;
+    #686868);
+  background: radial-gradient(circle at top center,
+    #e5e5e5,
+    #969696,
+    #686868);
   -moz-transition: color 0.3s;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
+  transition: color 0.5s;
 }
-.h:hover, .h_menu li a:hover, .h:focus, .h_menu li a:focus {
+
+.h:hover,
+.h_menu li a:hover,
+.h:focus,
+.h_menu li a:focus {
   color: #e2e2e2;
   text-shadow: 0 3px 10px #333333, 0 3px 10px #333333;
   -webkit-animation: jump 0.5s;
@@ -72,67 +92,84 @@ nav {
   -moz-animation: jump 0.5s;
   animation: jump 0.5s;
 }
+
 .h_menu li a:active {
-   animation: bigger 0.4s;
   -webkit-animation: bigger 0.4s;
   -o-animation: bigger 0.4s;
   -moz-animation: bigger 0.4s;
+  animation: bigger 0.4s;
 }
+
 #a_nav {
-	display: none;
+  display: none;
 }
-#h_nav:target ul{
-	display: none;
+
+#h:target .h_menu {
+  display: none;
 }
-#h_nav:target {
-	background: transparent;
+
+#h:target #a_nav {
+  display: block;
 }
-#h_nav:target #a_nav {
-	display: block;
+
+#h:target #n_nav {
+  display: none;
 }
-#h_nav:target #n_nav {
-	display:none;
+
+#h:target {
+  height: 0;
 }
+
+#h:target #h_nav {
+  width: auto;
+  background: transparent;
+}
+
 .blog_info {
-	height:100%;
-	margin:5px 20px 5px 80px;
-	padding:10px;
-	background:rgba(25, 25, 25, 0.7);
-	border-radius:8px;
-	float:left;
-	position:relative;
-	text-align:center;
-	font-size:18px;
-	color: #d6d6d6;
+  height: 100%;
+  margin: 5px 20px 5px 80px;
+  padding: 10px;
+  background: rgba(25, 25, 25, 0.7);
+  border-radius: 8px;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  color: #d6d6d6;
 }
+
 .blog_info a {
-	display:block;
-	color: #d6d6d6;
+  display: block;
+  color: #d6d6d6;
 }
+
 .blog_info .way {
-	margin:10px 0px;
-	padding-bottom:20px;
-	font-size:12px;
-	border-radius:3px;
-	border-bottom:#d6d6d6 solid 2px;
+  margin: 10px 0px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  border-radius: 3px;
+  border-bottom: #d6d6d6 solid 2px;
 }
+
 .blog_info .articles {
-	margin:20px;
-	font-size: 15px;
+  margin: 20px;
+  font-size: 15px;
 }
+
 .content {
-	height: 100%;
-	width: 60%;
-	margin: 5px;
-	padding:40px;
-	background: rgba(25 ,25 ,25 ,0.7);
-	border-radius:8px;
-	color: #d6d6d6;	
-	float:left;
-	position: relative;
-	text-align: center;
+  height: 100%;
+  width: 60%;
+  margin: 5px;
+  padding: 40px;
+  background: rgba(25, 25, 25, 0.7);
+  border-radius: 8px;
+  color: #d6d6d6;
+  float: left;
+  position: relative;
+  text-align: center;
 }
+
 .title {
-	font-size: 38px;
+  font-size: 38px;
 
 }
