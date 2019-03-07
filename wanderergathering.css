@@ -5,14 +5,15 @@ body {
 header {
   height: 75px;
   background: transparent;
-  z-index: 999;
 }
 
-nav {
+#h_nav {
   width: 100%;
+  min-width: 1210px;
   background: rgba(73, 73, 73, 0.85);
   border-radius: 10px;
   position: fixed;
+  z-index: 999;
 }
 
 .h {
@@ -45,11 +46,14 @@ nav {
 
 .h_menu {
   width: 800px;
+  height: 75px;
   margin: 0 auto;
+  overflow: hidden;
   position: relative;
 }
 
 .h_menu li {
+  height: 75px;
   float: left;
 }
 
@@ -127,6 +131,7 @@ nav {
 
 .blog_info {
   height: 100%;
+  width: 12%;
   margin: 5px 20px 5px 80px;
   padding: 10px;
   background: rgba(25, 25, 25, 0.7);
